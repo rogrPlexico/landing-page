@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+ul,
+h1,
+h3,
+p,
+blockquote {
+    margin: 0;
+}
+
+header,
+.one {
+    background-color: skyblue;
+}
+
+.three {
+    background-color: rgb(255, 173, 20)
+}
+
+.four{
+    background-color: rgb(255, 223, 163)
+}
