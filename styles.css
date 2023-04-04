@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* group selectors (background and margin only) */
 body,
 ul,
 h1,
@@ -16,10 +17,146 @@ header,
     background-color: skyblue;
 }
 
+/* flex containers */
+body, 
+header,
+.header-right,
+.one,
+.one-left,
+.two,
+.four,
+.four-left {
+    display: flex;
+}
+
+/* more group selectors */
+header,
+section,
+footer {
+    padding-right: 100px;
+    padding-left: 100px;
+    font-family: 'Hero New', sans-serif;
+                                                
+}
+
+/*standard elements */
+
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+p {
+    padding: 5px;
+    font-size: 18px;
+}
+
+button {
+    background-color: rgb(255, 173, 20);
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    width: 150px;
+    border-radius: 12px;
+    height: 40px;
+
+}
+
+/* --page structure--*/
+
+/* body */
+
+body {
+    flex-direction: column;
+}
+
+/* header */
+
+header {
+    justify-content: space-between;
+    flex: 1 13 auto;
+    height: 50px;
+    padding-top: 5px;
+    
+
+}
+
+.header-right {
+    list-style-type: none;
+    gap: 20px;
+    margin: 0px 20px;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+/* main */
+main {
+    flex: 13 1 auto;
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.one {
+    justify-content: space-around;
+}
+
+.one-left {
+    flex-direction: column;
+    flex: 1;
+}
+
+.one-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    ;
+}
+.one-right-img {
+    height: 300px;
+    width: 300px;
+}
+
+.two {
+    flex-direction: column;
+    align-items: center;
+}
+
+.two-images {
+}
+
 .three {
-    background-color: rgb(255, 173, 20)
+    background-color: rgb(255, 173, 20);
+    color: white;
+
 }
 
 .four{
-    background-color: rgb(255, 223, 163)
+    background-color: rgb(255, 223, 163);
+    justify-content: space-around;
+
+}
+
+.four-left {
+    flex-direction: column;
+}
+
+/* footer */
+
+footer {
+    flex: 1 13 auto;
 }
