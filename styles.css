@@ -109,9 +109,8 @@ cite{
 
 blockquote,
 cite {
-    margin-left: 400px;
-    margin-right: 300px;
-    align-items: flex-end;
+    align-self: self-end;
+    width: 300px;
 }
 
 /* --page structure--*/
@@ -126,7 +125,7 @@ body {
 
 header {
     justify-content: space-between;
-    flex: 1 13 auto;
+    flex: 1 13 ;
     padding-top: 5px;
 }
 
@@ -163,6 +162,7 @@ section {
 .one-left {
     flex-direction: column;
     flex: 1;
+    align-self: stretch;
 }
 
 .one-right {
@@ -174,8 +174,10 @@ section {
 }
 
 .one-right-img {
-    height: 300px;
-    width: 300px;
+    flex: 1 1 300px;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 250px;
 }
 
 .two {
@@ -186,6 +188,7 @@ section {
 .two-images {
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .three {
@@ -193,16 +196,21 @@ section {
     color: white;
     display: flex;
     flex-direction: column;
+    padding-right:300px;
+    flex-wrap: wrap;
 }
 
 .four{
     background-color: rgb(255, 223, 163);
     justify-content: space-around;
     margin: 50px 150px;
+    flex-wrap: wrap;
 }
 
 .four-left {
     flex-direction: column;
+    flex: 1 0 auto;
+    max-width: 600px;
 }
 
 /* footer */
