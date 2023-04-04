@@ -3,6 +3,7 @@
 }
 
 /* group selectors (background and margin only) */
+
 body,
 ul,
 h1,
@@ -13,11 +14,13 @@ blockquote {
 }
 
 header,
-.one {
+.one,
+footer {
     background-color: skyblue;
 }
 
 /* flex containers */
+
 body, 
 header,
 .header-right,
@@ -30,6 +33,7 @@ header,
 }
 
 /* more group selectors */
+
 header,
 section,
 footer {
@@ -49,9 +53,7 @@ footer {
     border-radius: 12px;
 }
 
-
 /*standard elements */
-
 
 h1 {
     font-size: 32px;
@@ -80,7 +82,6 @@ figcaption {
 blockquote {
     margin-top: 30px;
     font-style: italic;
-
 }
 
 cite{
@@ -91,10 +92,9 @@ cite{
 
 blockquote,
 cite {
-    margin-left: 450px;
-    margin-right: 250px;
+    margin-left: 400px;
+    margin-right: 300px;
     align-items: flex-end;
-
 }
 
 /* --page structure--*/
@@ -130,6 +130,7 @@ a {
 }
 
 /* main */
+
 main {
     flex: 13 1 auto;
 }
@@ -137,7 +138,6 @@ main {
 section {
     padding-top: 40px;
     padding-bottom: 40px;
-
 }
 
 .one {
@@ -155,8 +155,8 @@ section {
     justify-content: center;
     align-items: center;
     flex: 1;
-    ;
 }
+
 .one-right-img {
     height: 300px;
     width: 300px;
@@ -166,8 +166,6 @@ section {
     flex-direction: column;
     align-items: center;
 }
-
-
 
 .three {
     background-color: rgb(255, 173, 20);
@@ -180,6 +178,7 @@ section {
 .four{
     background-color: rgb(255, 223, 163);
     justify-content: space-around;
+    margin: 50px 150px;
 
 }
 
