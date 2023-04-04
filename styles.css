@@ -101,7 +101,7 @@ blockquote {
     font-style: italic;
 }
 
-cite{
+cite {
     font-style: normal;
     font-weight: bold;
     text-align: right;
@@ -110,7 +110,8 @@ cite{
 blockquote,
 cite {
     align-self: self-end;
-    width: 300px;
+    width: 500px;
+    font-size: 22px;
 }
 
 /* --page structure--*/
