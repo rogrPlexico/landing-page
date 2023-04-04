@@ -7,6 +7,7 @@
 body,
 ul,
 h1,
+h2,
 h3,
 p,
 blockquote {
@@ -47,6 +48,12 @@ footer {
     height: 50px;
 }
 
+.one,
+.three,
+.four {
+    padding-top: 40px;
+}
+
 .one-right-img,
 .two-img {
     border:rgb(255, 173, 20) 3px solid;
@@ -58,11 +65,21 @@ footer {
 h1 {
     font-size: 32px;
     font-weight: bolder;
+    padding-bottom: 15px;
+}
+
+h2 {
+    vertical-align: middle;
+    padding: 10px;
 }
 
 p {
-    padding: 5px;
     font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.above-button {
+    padding-bottom: 50px;
 }
 
 button {
@@ -136,7 +153,6 @@ main {
 }
 
 section {
-    padding-top: 40px;
     padding-bottom: 40px;
 }
 
@@ -167,19 +183,22 @@ section {
     align-items: center;
 }
 
+.two-images {
+    display: flex;
+    gap: 40px;
+}
+
 .three {
     background-color: rgb(255, 173, 20);
     color: white;
     display: flex;
     flex-direction: column;
-
 }
 
 .four{
     background-color: rgb(255, 223, 163);
     justify-content: space-around;
     margin: 50px 150px;
-
 }
 
 .four-left {
